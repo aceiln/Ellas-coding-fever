@@ -61,6 +61,16 @@ a:hover {
     z-index: 2;
 }
 
+#capraspberry {
+    position: absolute;
+    right: 65px;
+    top: 400px;
+    padding: 4px;
+    z-index: 2;
+    color: #D9D0DE;
+    border-bottom: 2px dotted #A04668;
+}
+
 .footer {
     position: fixed;
     bottom: 0;
