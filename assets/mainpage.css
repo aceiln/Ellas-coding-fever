@@ -61,7 +61,7 @@ a:hover {
     z-index: 2;
 }
 
-#capraspberry {
+.capraspberry {
     position: absolute;
     right: 65px;
     top: 400px;
