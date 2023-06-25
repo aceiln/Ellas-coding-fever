@@ -1,0 +1,59 @@
+:root {
+    --Dark: #161616;
+    --DarkPink: #A04668;
+    --MidPink: #9a6f81;
+    --TextPink: #D9D0DE;
+    }
+    
+
+
+.sidepanel {
+    height: 160px;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 10px;
+    left: -60px;
+    background-color: #0b0b0b;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    background-color: #0b0b0b;
+  }
+  
+  .sidepanel a:hover{
+    color: var(--TextPink);
+    background-color: rgb(34, 133, 88);
+  }
+
+  .sidepanel .closebtn {
+    position: static;
+    line-height: 20px;
+    font-size: 20px;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    position:fixed;
+    top: 60px;
+    left: -40px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px 10px 70px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+    transition: 0.3s;
+  }

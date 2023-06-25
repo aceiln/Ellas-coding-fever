@@ -2,22 +2,30 @@
    font-family:'Courier New';
    background-color: #1d1d1d;
 }
-
-.header {
-    position: fixed;
-    margin-top: -80px;
-    margin-left: -20px;
-    padding: 13px 100% .03px 11px;
-    background-color: #161616;
-    line-height:10px;
-    width: 100%;
-    z-index: 5;
+:root {
+--Dark: #161616;
+--DarkPink: #A04668;
+--MidPink: #9a6f81;
+--TextPink: #D9D0DE;
 }
 
+.header {
+    display: flex;
+    position:fixed;
+    padding: 20px 20px 0 0;
+    margin-top: -100px;
+    margin-left: -13px;
+    width: 100%;
+    background: var(--Dark);
+    color: var(--DarkPink);
+    line-height: 20px;
+    z-index: 5;
+  }
+
 #headertext {
-color: #A04668;
-background-color: #161616; 
-margin-left: 40px;
+color: var(--DarkPink);
+background-color: var(--Dark); 
+margin-left: 30px;
 }
 
 body {
@@ -26,18 +34,18 @@ body {
 
 h2{
 margin-bottom: -15px;
-margin-left: 40px;
-color: #9a6f81;
+margin-left: 90px;
+color: var(--MidPink);
 }
 
 .text {
-    color: #D9D0DE;
-    margin-left: 55px;
+    color: var(--TextPink);
+    margin-left: 135px;
     margin-bottom: -10px;
     line-height: 20px;
 }
 a{
-    color: #A04668;
+    color: var(--DarkPink);
     float: right;
 }
 
@@ -46,7 +54,7 @@ a:hover {
   }
 
 #darkbg{
-    background-color: #161616; 
+    background-color: var(--Dark); 
 }
 .inline {
     float: left;
@@ -58,7 +66,7 @@ a:hover {
     position: absolute;
     right: 25px;
     border-radius: 30px;
-    z-index: 2;
+    z-index: 0;
 }
 
 .capraspberry {
@@ -66,9 +74,9 @@ a:hover {
     right: 65px;
     top: 400px;
     padding: 4px;
-    z-index: 2;
-    color: #D9D0DE;
-    border-bottom: 2px dotted #A04668;
+    z-index: 0;
+    color: var(--TextPink);
+    border-bottom: 2px dotted var(--DarkPink);
 }
 
 .footer {
@@ -76,7 +84,7 @@ a:hover {
     bottom: 0;
     margin-left: -20px;
     padding: .03px 100% 13px 11px;
-    background-color: #161616;
+    background-color: var(--Dark);
     line-height:10px;
     width: 100%;
     z-index: 5;
