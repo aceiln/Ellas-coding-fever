@@ -1,6 +1,7 @@
 *{
    font-family:'Courier New';
    background-color: #1d1d1d;
+   scroll-behavior: smooth;
 }
 :root {
 --Dark: #161616;
@@ -30,6 +31,7 @@ margin-left: 30px;
 
 body {
     margin-top: 80px;
+    margin-bottom: 100px;
 }
 
 h2{
@@ -38,19 +40,26 @@ margin-left: 90px;
 color: var(--MidPink);
 }
 
+.headerunderline{
+line-height: 10px;
+}
+
 .text {
     color: var(--TextPink);
+    width: 700px;
     margin-left: 135px;
     margin-bottom: -10px;
-    line-height: 20px;
+    overflow-wrap: break-word;
+    line-height: 25px;
 }
-a{
+header a{
     color: var(--DarkPink);
     float: right;
 }
 
 a:hover {
     color: rgb(34, 133, 88);
+    transition: .3s;
   }
 
 #darkbg{
@@ -63,8 +72,9 @@ a:hover {
 
 #raspberry {
     object-fit: cover;
-    position: absolute;
-    right: 25px;
+    position:absolute;
+    right: 27px;
+    top: 120px;
     border-radius: 30px;
     z-index: 0;
 }
@@ -77,6 +87,7 @@ a:hover {
     z-index: 0;
     color: var(--TextPink);
     border-bottom: 2px dotted var(--DarkPink);
+    margin-bottom: 400px;
 }
 
 .footer {
@@ -93,3 +104,4 @@ a:hover {
 .centered {
     text-align: center;
 }
+
