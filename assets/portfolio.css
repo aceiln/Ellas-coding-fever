@@ -4,8 +4,6 @@
     --MidPink: #9a6f81;
     --TextPink: #D9D0DE;
     }
-    
-
 
 .sidepanel {
     height: 160px;
@@ -57,3 +55,75 @@
     background-color: #444;
     transition: 0.3s;
   }
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 30px;
+    margin-left: 135px;
+    width: 750px;
+    height: 600px;
+    grid-gap: 8px;
+    background-color: var(--Dark);
+    padding:8px;
+  }
+
+  .grid section {
+    background-color: #1d1d1d;
+    text-align: left;
+    padding: 20px 0;
+    font-size: 30px;
+    background-size: cover;
+    opacity: 40%;
+  }
+
+    mark {
+        color:var(--TextPink);
+        font-style: italic;
+  }
+
+.grid section:hover {
+    opacity: 90%;
+    transition: .3s;
+}
+
+  .item1 {
+    grid-row: 1/4;
+     }
+
+.img1 {
+    background-image: url(./dried-raspberries-683x1024.jpg);
+}
+
+.img2 {
+    background-image: url(./raspberry.x816dac31.jpg);
+}
+
+.img3 {
+    background-image: url(./Raspberries\ \(1\).jpg);
+}
+
+.img4 {
+    background-image: url(./raspberry_chocolate_protein_shake_2.jpg);
+}
+
+section ul {
+    position:absolute;
+    top: 990px;
+    margin-bottom: 90px;
+    list-style-type: none;
+
+}
+
+section ul li {
+    background-color: var(--Dark);
+    display: inline;
+    padding: 10px;
+    border-radius: 30px;
+    width:auto;
+}
+
+section ul li a {
+    background-color: var(--Dark);
+    color: var(--DarkPink)
+}
