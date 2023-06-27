@@ -11,7 +11,7 @@
     position: fixed;
     z-index: 1;
     top: 10px;
-    left: -60px;
+    left: -20px;
     background-color: #0b0b0b;
     overflow-x: hidden;
     padding-top: 60px;
@@ -76,13 +76,72 @@
     background-size: cover;
     opacity: 40%;
   }
+.item1section {
+    grid-row: 1/4;
+    background-image: url(./dried-raspberries-683x1024.jpg);
+    opacity: 40%;
+}
+
+.item1section:hover {
+    transition: .3s;
+    opacity: 90%;
+}
+
+.img2section {
+    grid-row: 1/2;
+    background-size: cover;
+    background-image: url(./raspberry.x816dac31.jpg);
+    opacity: 40%;
+}
+
+.img2section:hover {
+    transition: .3s;
+    opacity: 90%;
+}
+
+.img3section {
+    background-size: cover;
+    background-image: url(./Raspberries\ \(1\).jpg);
+    opacity: 40%;
+}
+
+.img3section:hover {
+    transition: .3s;
+    opacity: 90%;
+}
+
+.img4section {
+    background-size: cover;
+    background-image: url(./raspberry_chocolate_protein_shake_2.jpg);
+    opacity: 40%;
+}
+
+.img4section:hover {
+    transition: .3s;
+    opacity: 90%;
+}
 
     mark {
         color:var(--TextPink);
         font-style: italic;
   }
 
-.grid section:hover {
+  .grid .item1section:hover section {
+    opacity: 90%;
+    transition: .3s;
+}
+
+.grid .img2section:hover section {
+    opacity: 90%;
+    transition: .3s;
+}
+
+.grid .img3section:hover section {
+    opacity: 90%;
+    transition: .3s;
+}
+
+.grid .img4section:hover section {
     opacity: 90%;
     transition: .3s;
 }
@@ -91,26 +150,11 @@
     grid-row: 1/4;
      }
 
-.img1 {
-    background-image: url(./dried-raspberries-683x1024.jpg);
-}
-
-.img2 {
-    background-image: url(./raspberry.x816dac31.jpg);
-}
-
-.img3 {
-    background-image: url(./Raspberries\ \(1\).jpg);
-}
-
-.img4 {
-    background-image: url(./raspberry_chocolate_protein_shake_2.jpg);
-}
 
 section ul {
-    position:absolute;
-    top: 990px;
-    margin-bottom: 90px;
+    position:relative;
+    padding-top: 10px;
+    margin-bottom: 10px;
     list-style-type: none;
 
 }
@@ -120,15 +164,52 @@ section ul li {
     display: inline;
     padding: 10px;
     border-radius: 30px;
-    width:auto;
+    width:100%;
 }
 
 section ul li a {
     background-color: var(--Dark);
-    color: var(--DarkPink)
+    color: var(--DarkPink);
+    opacity: 100%;
 }
 
 .paddingbottom {
     padding-bottom: 45px;
     margin-left: 50px;
 }
+
+@media screen and (max-width: 1262px) {
+    .openbtn {
+        padding-top: 50px;
+    }
+    .sidepanel {
+        padding-top: 100px;
+    }
+    .aboutme {
+        padding-top: 30px;
+    }
+
+    figure {
+        opacity:0%;
+        transition: .5s;
+    }
+
+    section ul li {
+        position:relative;
+        display: flex;
+        flex-direction: row;
+    }
+    .paddingbottom {
+        padding-bottom: 20px;
+        margin-left: 50px;
+    }
+    .grid {
+        width:60%;
+        height: 60%;
+    }
+
+ .text {
+        width: 60%;
+        height: 60%;
+    }
+  }
